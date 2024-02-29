@@ -1,0 +1,590 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* for header */
+
+.logo_header{
+    position: relative;
+    top: 1px;
+    right: 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #333;;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.container {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40%;
+    position: absolute;
+    left: 8rem;
+    bottom: -18px;
+    font-size: 50px;
+    color: #ccc;
+    font-family: Cormorant Garamond;
+    margin: 0; /* Reset margin */
+    padding: 30px; /* Reset padding */
+}
+
+.vibe {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    font-size: 16px;
+    padding-left: 20rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.nav-links li a {
+    padding: 10px 20px;
+    text-decoration: none; 
+    color: white;   
+    cursor: pointer;
+    
+}
+
+.nav-links li a:hover {
+    background-color: rgb(128, 128, 128); /* Default background color */
+    color: #2d0b00;
+    border: none;
+    border-radius: 7px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    background-color: #3333330a;
+    min-width: 150px;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 15px;
+    
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #3333330a;
+    min-width: 160px;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 15px;  
+}
+
+.dropdown-content1 a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+  
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top : 19px;
+    right: -100px;
+    border-radius: 10px;
+    background-color: #333333c0;
+    min-width: 180px;
+    z-index: 1;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+    color: #1362c9fa;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.dropdown-content2 a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content2 {
+    display: block;
+
+}
+
+/* video container */
+
+.video-container {
+    height: 110vh; /* Set initial height */
+    transition: height 0.2s ease-out; /* Smooth transition effect */
+    transform: none;
+    opacity: 0.992333;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.para-main {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    background-clip: text;
+    color: transparent;
+    height: 100vh;
+    width: 80%;
+    font-weight: 700;
+    font-size: 50px;
+    position: absolute;
+    top: 10rem;
+    left: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+}
+
+/* For Btn */
+.link_btn {
+    font-size: 16px;
+    width: 20%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30rem;
+    left: 10rem;
+    border: 1px solid rgb(84, 228, 253);
+}
+
+.link_btn:hover {
+    background: rgb(84, 228, 253);
+    background-clip: text;
+    color: transparent;
+    box-shadow: 0px 0 19px  rgba(0, 238, 255, 0.384);
+}
+
+/* for about skate  */
+
+.photo-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: -4px;
+    width: 100%;
+    height: 200%; /* Set initial height */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.heading-secondary {
+    font-size: 60px;
+    position: absolute;
+    bottom: 27rem;
+    left: 10rem;
+    color: #ccc;
+    font-family: Cormorant Garamond;
+   
+}
+.para-second {
+    font-size: 18px;
+    color: #f3f3f3;
+    position: absolute;
+    bottom: 20rem;
+    left: 55.6rem;
+    width: 45%;
+    line-height: 1.5;  
+    
+}
+
+.para-second2 {
+    font-size: 18px;
+    color: #f3f3f3;
+    position: absolute;
+    bottom: 12rem;
+    left: 21.9rem;
+    width: 45%;
+    line-height: 1.5;
+   
+}
+ 
+/* purchase form */
+
+.purchase-form {
+    position: absolute;
+    top: 25rem;
+    left: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+        
+}
+
+.form-group  {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    height: 10vh;
+   
+    
+}
+
+#game1 {
+    height: 50px;
+    width: 140%;
+    color: #111;
+    background-color: rgb(70, 231, 231);
+    border: none;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#game2 {
+    height: 50px;
+    width: 140%;
+    color: #111;
+    background-color: rgb(70, 231, 231);
+    border: none;
+    font-weight: 600;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#game3 {
+    height: 50px;
+    width: 140%;
+    color: #111;
+    background-color: rgb(70, 231, 231);
+    border: none;
+    font-weight: 600;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+ .btn {
+    width: 140% ;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 1000;
+}
+ 
+button {
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 1000;
+    margin-left: 11rem;
+    cursor: pointer;
+
+}
+
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.308); /* Black with 
+    opacity */
+    
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #333333dc;
+    margin: 10% auto; /* Centered */
+    padding: 20px;
+    border: 1px solid #888;
+    height: 50%;
+    width: 50%; /* 80% width */
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 0 19px rgba(0, 0, 0, 0.904);
+  }
+
+ .purchase, .your {
+    position: relative;
+    top: 3.5rem;
+    line-height: 4;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+.photo {
+    height: 300px;
+    max-width: fit-content;
+    position: relative;
+    bottom: 25rem;
+    left: 13rem;
+   
+}
+
+option {
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.photo-container1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Set initial height */
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-bottom: -4px;
+}
+
+.photo-container1 img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    
+}
+
+h4 {
+    position: absolute;
+    bottom: 13rem;
+    left: 5rem;
+    font-size: 3.5rem;
+    font-family: Cormorant Garamond;
+}
+
+.join-btn {
+    position: absolute;
+    bottom: 8rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    background-color: black;
+    width: 10%;
+    height: 3.5rem;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.join-btn:hover {
+    height: 4rem;
+}
+
+
+footer {
+    height: 60vh;
+    width: 97.8%;
+    background: #333;
+    color: #fff;
+    padding: 15px ;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 80px auto;
+}
+
+
+.col {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 40px;
+    
+}
+
+.col1 {
+    list-style: none;
+    margin: 20px;
+    font-size: 16px;
+    padding-left: 30px;
+    font-weight: 600;
+    gap: 4.5rem; 
+    text-decoration: none; 
+}
+
+.col1, .a {
+    text-decoration: none;
+    color: #fefefe;
+    display: flex;
+}
+
+.a:hover {
+    color: rgba(255, 174, 0, 0.76);
+}
+
+.social_icon .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #f3f3f3;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    bottom: 70px;
+    margin: 20px;
+
+}
+
+.heading-secondary1 {
+    font-size: 50px;
+    width: 40px;
+    position: relative;
+    bottom: 2rem;
+    left: 8rem;
+    color: #ccc;
+    font-family: Cormorant Garamond;
+    text-decoration: none;
+}
+
+.games {
+    text-decoration: none;
+}
+
+.img1 {
+    position: relative;
+    bottom: 5rem;
+    right: 8rem;
+    float: right;
+}
+/* 
+@media (max-width: 700px) {
+    footer {
+        height: 55vh;
+    }
+
+    .social_icon .fa-brands {
+        display: none;
+    }
+
+    .col {
+        font-size: 12px;
+        flex-basis: 20%;
+        padding: 10px;
+
+    }
+    
+    .logo_footer {
+        position: relative;
+        bottom: 10px;
+    }
+    .col:nth-child(2), .col:nth-child(3) {
+        flex-basis: 10%;
+
+    }
+    .para {font-size: 12px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+
+    }
+ 
+} 
+*/
