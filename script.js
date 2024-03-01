@@ -40,6 +40,47 @@ window.addEventListener('scroll', () => {
 
 });
 
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    // Check screen size and adjust behavior accordingly
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        // Execute these adjustments only if the screen width is at least 768px
+        game1.style.marginLeft = value * 0.09 + 'px';
+        game2.style.marginLeft = value * 0.09 + 'px';
+        game3.style.marginLeft = value * 0.09 + 'px';
+        form.style.marginLeft = value * 0.09 + 'px';
+        para.style.marginLeft = value * -0.40 + 'px';
+        para1.style.marginLeft = value * 0.40 + 'px';
+        heading.style.marginBottom = value * -0.1 + 'px';
+    } else {
+        // Adjustments for screens smaller than 768px
+        game1.style.marginLeft = ''; // Reset margin
+        game2.style.marginLeft = ''; // Reset margin
+        game3.style.marginLeft = ''; // Reset margin
+        form.style.marginLeft = ''; // Reset margin
+        para.style.marginLeft = ''; // Reset margin
+        para1.style.marginLeft = ''; // Reset margin
+        heading.style.marginBottom = ''; // Reset margin
+    }
+
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+        // Execute these adjustments only if the screen width is at least 1024px
+        img.style.marginLeft = value * 0.01 + 'vh';
+        link.style.marginLeft = value * -3.5 + 'px';
+    } else {
+        // Adjustments for screens smaller than 1024px
+        img.style.marginLeft = ''; // Reset margin
+        link.style.marginLeft = ''; // Reset margin
+    }
+
+    // Common adjustments regardless of screen size
+    text.style.marginTop = value * -2.5 + 'px';
+});
+
+
+
+
 // Get the purchase confirmation modal
 var purchaseConfirmationModal = document.getElementById("purchaseConfirmationModal");
 
