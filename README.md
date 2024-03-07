@@ -1,0 +1,1 @@
+For my internship assignment, I was tasked with creating a website project. In this project, I implemented the parallax effect to enhance the user experience. This assignment marked my first experience in website development.
